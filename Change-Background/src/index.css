@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 20px, 100px;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+img{
+    width: 80%;
+    text-align: center;
+    align-content: center
+    /* height: auto;
+    margin: 0 auto; */
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+.btn{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: solid yellow 2px;
+    border-radius: 50%;/* to make circular figure */
+    cursor: pointer;
+}
+#brown{
+    background-color: #faf9f9;
+}
+#red{
+    background-color: #ff0000;
+}
+#black{
+    background-color: #000000;
+}
+#blue{
+    background-color: #0b0bfb;
+}
+#colfet{
+    text-align: right;
+}
