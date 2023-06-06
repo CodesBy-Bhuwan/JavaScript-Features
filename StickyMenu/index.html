@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Menu</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #header{
+            text-align: center;
+        }
+        #id{
+            width: 250px;
+            height: auto;
+        }
+        #logo{
+            width: 20%;
+            text-align: center;
+        }
+        #menu-bar{
+            text-align: center;
+            background-color: aqua;
+        }
+        #menu-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: azure;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        #pic{
+            width: 80%;
+        }
+        #container{
+            text-align: center;
+            padding: 50px 100px;
+        }
+        .stiky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="logo"src="/src/Rotary_International_logo-11264214.jpeg" alt="logo">
+    </div>
+    <nav id="menu-bar">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+    <div id="container">
+        <h1>About Us</h1>
+        <img id="pic" src="/src/art-artistic-bright-color-220320.jpg" alt="The beauty">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eligendi id temporibus dolore sint, veritatis tempora saepe fuga corporis quas consectetur inventore. Tempora provident, harum soluta vel adipisci nemo nam tempore molestias, atque inventore, excepturi pariatur. Aut cumque nulla dolorum odit sunt veniam quod. Ea unde magni sapiente quidem iusto possimus ipsum sit, adipisci obcaecati at aut alias qui nisi quisquam, dolorum quam veritatis natus accusantium nobis eius tempora temporibus. Culpa aliquid fugiat fugit iusto ad magni amet quisquam harum vero magnam eveniet inventore, nostrum delectus tempora sit consectetur numquam laborum quam repellat odit nisi minima necessitatibus ratione repellendus? Magnam dolor harum numquam maxime dolore facilis animi aliquid quam ipsam molestias, quas, eum assumenda voluptate eaque aspernatur! Molestiae obcaecati soluta dolor, ad tempora vitae exercitationem libero. Tempora molestiae inventore aut, ipsam asperiores quisquam similique repellat possimus dolorum blanditiis ipsa pariatur beatae totam provident vero dolores repudiandae atque exercitationem numquam officia optio? Porro accusamus qui autem tempore veniam fuga nemo molestias ipsam voluptatem beatae officia ducimus repellat architecto sint eveniet a, harum inventore non tempora officiis consequatur natus temporibus! Vero unde hic expedita, voluptas iusto quam dolores quae atque nostrum quas exercitationem magni, accusantium blanditiis non odit doloremque! Rem dignissimos harum asperiores cum deserunt molestias dicta id ratione debitis mollitia quam consequatur ipsa perferendis temporibus quidem voluptatem nostrum facere aliquid inventore, hic sint. Expedita debitis voluptatum ex, recusandae illo quis! Perspiciatis cum corrupti id commodi ipsum assumenda aspernatur. Animi magnam aut quas praesentium beatae quaerat doloremque autem vero ipsam? Unde cupiditate aspernatur ut deleniti nostrum officia assumenda accusamus aliquid animi mollitia aliquam quis ipsam reiciendis in illum sed saepe debitis obcaecati blanditiis minima consequatur, dolor neque voluptatum! Itaque culpa id aliquid iure nemo dolor fugiat eveniet facilis provident ullam? Deserunt quo quis, doloribus voluptatibus labore repellendus quas officiis sit harum aspernatur in dicta porro alias possimus reiciendis dolore! Earum consectetur id odio at ullam aut laboriosam eveniet quibusdam tenetur delectus placeat facere assumenda repudiandae, amet saepe? Minima ratione repudiandae quasi quo. Reprehenderit, unde ea veritatis quis cupiditate quos obcaecati nam, a esse voluptatibus dolore ipsam mollitia, libero officia voluptatum perferendis dolorem ipsa sapiente provident quam natus autem aperiam accusamus? Voluptatum iure sit sed odit exercitationem vero ut numquam consectetur fugiat facere obcaecati temporibus nihil dolorum minus cupiditate autem, iste excepturi magni eius cumque consequuntur animi minima accusantium! Doloribus consectetur quidem laborum! Numquam assumenda iste aut cupiditate veniam consectetur magnam mollitia minus!
+        </p>
+    </div>
+    
+    <script>
+
+        window.addEventListener('scroll', function(){
+            let navbar = document.getElementById("menu-bar");
+            if(window.pageYOffset >= 186){
+                navbar.classList.add('stiky');
+            }else{
+                navbar.classList.remove('stiky');
+            }
+        })
+    </script>
+</body>
+</html>
